@@ -31,6 +31,9 @@ import { AuthService } from './user/auth.service';
 import { VoterService } from './events/sessions/voter.service';
 import { UpvoteComponent } from './events/sessions/upvote/upvote.component';
 import { HttpClientModule } from '@angular/common/http';
+import { JqgraphsComponent } from './jqgraphs/jqgraphs.component';
+import { jqxBarGaugeComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge';
+import { jqxChartComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxchart';
 
 
 const toastr: Toastr = window['toastr'];
@@ -52,7 +55,10 @@ const jQuery = window['$'];
     DurationPipe,
     SimpleModalComponent,
     ModalTriggerDirective,
-    UpvoteComponent
+    UpvoteComponent,
+    JqgraphsComponent,
+    jqxBarGaugeComponent,
+    jqxChartComponent
   ],
   imports: [
     BrowserModule,

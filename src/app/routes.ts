@@ -6,6 +6,7 @@ import { EventsListComponent,
     EventListResolverService,
     EventResolver,
     CreateSessionComponent} from './events/index';
+import { JqgraphsComponent } from './jqgraphs/jqgraphs.component';
 
 export const appRoutes: Routes = [
     {path: '' , redirectTo: '/events', pathMatch: 'full'},
@@ -14,6 +15,7 @@ export const appRoutes: Routes = [
     {path: 'events/:id', component: EventDetailsComponent, resolve: {event: EventResolver} },
     {path: 'events/session/new', component: CreateSessionComponent},
     {path: '404' , component: Error404Component},
+    {path:'jq', component:JqgraphsComponent},
     {path: 'user', loadChildren: './user/user.module#UserModule'},
     {path: '**' , redirectTo: '/404'}
 ];
